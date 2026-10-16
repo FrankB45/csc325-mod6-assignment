@@ -1,5 +1,5 @@
 import math
-from triangle_classify import classify_triangle
+from triangle import classify_triangle
 
 def test_customer_requirements():
     #AC 1 

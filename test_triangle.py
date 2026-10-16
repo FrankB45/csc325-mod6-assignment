@@ -1,7 +1,7 @@
 import math
 import pytest
 
-from triangle_classify import classify_triangle
+from triangle import classify_triangle
 
 
 @pytest.mark.parametrize("sides", [
