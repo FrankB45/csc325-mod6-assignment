@@ -38,3 +38,13 @@ Acceptance Criteria 3 - Given a Isosceles triangle that makes a right angle, whe
 
 ## AI Use Statement
 
+GitHub Copilot: Used autocomplete and accepted inline solutions for function names and imports. Modified when suggestions were close enough to what I wanted. 
+
+ChatGPT: Used to review classifier code and expand the suggested code to full implementations that meet specifications. Used to identify missing cases in classify code. Used to produce triangles that matched certain criteria to use in test cases. Helped with README Markdown formatting. 
+
+## Boundary cases & equivalence classes
+
+- Zero-length boundary: Every side must be greater than zero. The tests include zero and negative sides, plus a valid positive fractional example, (0.5, 0.5, 0.5).
+- Triangle-inequality boundary: The sum of two sides must be strictly greater than the third. The tests include a sum below the third side, (1, 2, 4); exactly equal to it, (1, 2, 3); and greater than it, (2, 3, 4).
+- Side order: Reordered inputs check that the classification does not depend on which position contains the longest side or the equal sides.
+- Floating-point behavior: The non-integer right triangle (5, 5, 5 * math.sqrt(2)) checks that rounding does not prevent recognition of a right-angle piece.
